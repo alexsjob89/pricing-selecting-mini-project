@@ -1,38 +1,133 @@
+body {
+    background-color: rgb(187, 220, 255);
+    z-index: 0;
+}
+
 .App {
-  text-align: center;
+    margin: auto;
+    margin-top: 7rem;
+    inset: 0 0 0 0;
+    /* border: 1px solid black; */
+    height: 45rem;
+    width: 23rem;
+    border-radius: 10px;
+    background-color: rgb(187, 220, 255, 0.5);
+    z-index: 10;
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square-top {
+    top: 2rem;
+    left: 23rem;
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    background-color: rgba(150, 201, 255, 0.5);
+    z-index: -1;
+    border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square-bottom {
+    top: 27rem;
+    left: 37rem;
+    position: absolute;
+    width: 20rem;
+    height: 30rem;
+    background-color: rgba(150, 201, 255, 0.5);
+    z-index: -1;
+    border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* .Header {
+    position: absolute;
+    z-index: 1;
+} */
+
+.inputs {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+label {
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 18rem;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.personal {
+    padding-right: 10px;
+}
+
+header {
+    /* border: 1px solid black; */
+    background-color: white;
+    width: 18rem;
+    padding: 0px 20px;
+    align-items: center;
+    height: 9rem;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin: auto;
+    top: 1rem;
+}
+
+.main-header {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.sub-header {
+    margin: auto;
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding-bottom: 20px;
+}
+
+.price-changing {
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 18rem;
+    padding: 20px;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.buttons {
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    height: 4rem;
+    width: 18rem;
+    padding: 0 20px;
+    margin: auto;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button {
+    position: relative;
+    font-size: 21px;
+    padding: 10px;
+    border-radius: 8px;
+    background: none;
+    border: none;
+    background-image: linear-gradient(to bottom, rgb(143, 143, 143), grey, black);
+    color: white;
+    margin-top: 10px;
+    margin-left: 1.3rem;
 }
